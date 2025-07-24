@@ -1,0 +1,75 @@
+body {
+  font-family: "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+  background-color: #fffaf5;
+  color: #333;
+  line-height: 1.8;
+  margin: 0;
+  padding: 0 15px;
+}
+
+h1 {
+  text-align: center;
+  background-color: #d5b99c;
+  color: #fff;
+  padding: 30px 0;
+  margin-bottom: 30px;
+  font-size: 26px;
+}
+
+section {
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3, h4 {
+  text-align: center;
+  color: #6b4226;
+  margin-top: 20px;
+}
+
+.song {
+  margin-bottom: 40px;
+}
+
+.song img {
+  display: block;
+  max-width: 300px;
+  height: auto;
+  margin: 10px auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+p {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px;
+  margin-bottom: 15px;
+}
+.back-button {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.back-button a {
+  display: inline-block;
+  background-color: #6b4226;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.back-button a:hover {
+  background-color: #8c5a3c;
+}
+
+footer p {
+  text-align: center;
+}

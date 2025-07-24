@@ -1,0 +1,147 @@
+/* terminalcare.css */
+
+/* === 全体背景とフォント === */
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: #fff8f4;
+  color: #333;
+  line-height: 1.9;
+  margin: 0;
+  padding: 0;
+}
+
+/* === ヘッダー見出し === */
+h1 {
+  text-align: center;
+  font-size: 2em;
+  color: #2c3e50;
+  border-bottom: 2px solid #3498db;
+  padding: 0.5em 0;
+  margin: 1.5em auto;
+}
+
+/* === セクションの余白とレイアウト === */
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2em;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* === 段落のデザイン === */
+p {
+  max-width: 38em;
+  margin: 0 auto 1.8em;
+  text-align: justify;
+  text-justify: inter-ideograph;
+  font-size: 1.05em;
+}
+
+/* === 画像スタイル === */
+p img {
+  display: block;
+  margin: 2em auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* === フッターのリンク === */
+footer {
+  background-color: #f0f4f8;
+  padding: 2em 1em;
+  text-align: center;
+  font-size: 0.95em;
+  margin-top: 3em;
+  border-top: 1px solid #ccc;
+}
+
+.footer-link {
+  display: block;
+  margin-bottom: 0.8em;
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center; 
+}
+.footer-link-wrapper {
+  text-align: center;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+.page-links {
+  text-align: center;
+  margin-top: 3em;
+  font-size: 0.95em;
+}
+
+.page-links p {
+  margin-bottom: 0.8em;
+  text-align: center; 
+}
+
+.page-links a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.page-links a:hover {
+  text-decoration: underline;
+}
+
+.back-button {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.back-button a {
+  display: inline-block;
+  background-color: #6b4226;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.back-button a:hover {
+  background-color: #8c5a3c;
+}
+
+.orange-button {
+  display: inline-block;
+  background-color: #e67e22; /* オレンジ色 */
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.orange-button:hover {
+  background-color: #d35400; /* 少し濃いオレンジに */
+}
+
+
+@media screen and (max-width: 768px) {
+  .schedule-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .daily-schedule,
+  .image-column {
+    max-width: 100%;
+  }
+
+  .daily-schedule {
+    padding: 1em;
+  }
+}

@@ -1,0 +1,263 @@
+header p {
+  text-align: center;
+  margin-top: 0.5em;
+}
+
+
+body {
+  font-family: "Noto Sans JP", "Yu Gothic", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  background: #fff8f4;
+  color: #333;
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  max-width: 720px;
+  margin: 40px auto;
+  padding: 30px 20px;
+  background: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  margin-top: 2em;
+  color: #6b4226;
+  position: relative;
+}
+
+h1 {
+  font-size: 2em;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 0.5em;
+  color: #2c3e50;
+  margin-bottom: 1em;
+}
+
+h2, h3 {
+  font-size: 1.5em;
+}
+
+h2::after, h3::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 8px auto 0;
+  background-color: #e9b87a;
+  border-radius: 3px;
+}
+
+p {
+  max-width: 38em;
+  margin: 0 auto 1.5em;
+  text-align: left;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 38em;
+  text-align: left;
+}
+
+ul li {
+  margin: 0.4em 0;
+  font-size: 1.05em;
+}
+
+.daily-schedule {
+  list-style: none;
+  padding: 0;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.daily-schedule li {
+  display: flex;
+  margin: 0.4em 0;
+}
+
+.daily-schedule .time {
+  display: inline-block;
+  width: 80px;
+  font-weight: bold;
+  color: #6b4226;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1em auto;
+  border-radius: 4px;
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+section.navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+/* === 茶色ボタン：自己紹介ページ用 === */
+.brown-button {
+  display: inline-block;
+  background-color: #6b4226;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.brown-button:hover {
+  background-color: #8c5a3c;
+  text-decoration: underline;
+}
+
+
+section.navigation article {
+  background-color: #f5f9ff;
+  border-left: 5px solid #3498db;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  max-width: 700px;
+  width: 100%;
+}
+
+/* ここがタイトル部分 */
+section.navigation article h2 {
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+/* ← ここを追加！本文を中央に揃える */
+section.navigation article p {
+  text-align: center;
+  max-width: 36em;
+  margin: 0 auto 1.5em;
+}
+
+/* 末尾のマージン調整（既存） */
+.section-heading + p:last-of-type {
+  margin-bottom: 0;
+}
+
+
+
+.highlight {
+  background-color: #fff3e0;
+  padding: 20px;
+  padding-top: 10px;
+  border-radius: 10px;
+  border-left: 6px solid #ffa726;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  margin-top: 0;
+  max-width: 38em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 「施設の役割とやりがい」のセクションと、.highlight の間の余白をなくす */
+section:not(.highlight) + .highlight {
+  margin-top: -1.5em; /* マイナスマージンで引き上げる */
+}
+
+.center-block {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.center-block ul {
+  display: inline-block;
+  text-align: left;
+  padding-left: 0;
+  list-style-position: inside;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9em;
+  color: #777;
+  margin-top: 40px;
+}
+
+footer p {
+  text-align: center;
+}
+
+.footer-link {
+  text-align: center; /* ← このままだと無効なので… */
+  /* ↑ <a> タグには効かないため、pタグに効かせる必要あり */
+}
+
+.footer-link-wrapper {
+  text-align: center;
+}
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.back-button {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.back-button a {
+  display: inline-block;
+  background-color: #6b4226;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.back-button a:hover {
+  background-color: #8c5a3c;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  main {
+    padding: 20px 10px;
+  }
+
+  ul li {
+    display: block;
+    text-align: left;
+  }
+
+  .center-block ul {
+    display: block;
+  }
+
+  .daily-schedule li {
+    flex-direction: column;
+  }
+
+  .daily-schedule .time {
+    width: auto;
+  }
+}
+

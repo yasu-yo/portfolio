@@ -1,0 +1,202 @@
+body {
+  font-family: "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+  background-color: #f8f8f5;
+  color: black;
+  margin: 0;
+  padding: 0;
+  line-height: 1.8;
+}
+
+header {
+  background-color: pink;
+  color: chocolate;
+  padding: 40px 0;
+  text-align: center;
+}
+
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1, h2, h3, h4 {
+  text-align: center;
+}
+
+h2 {
+  color: #5a3a1a;
+  border-bottom: 2px solid #c0a060;
+  padding-bottom: 8px;
+  margin-top: 40px;
+  font-size: 2em;
+}
+
+h3 {
+  color: #333;
+  margin-top: 30px;
+  font-size: 1.4em;
+  position: center;
+  padding-left: 0;
+  display: static;
+}
+
+.torii {
+  color: #e60033; /* 鳥居のような赤 */
+  margin-right: 0.3em;
+}
+
+h4 {
+  color: #a0522d;
+  background-color: #fff4e6;
+  padding: 10px;
+  border-left: 6px solid #c0a060;
+  font-size: 1.2em;
+  margin-top: 40px;
+}
+
+p {
+  max-width: 720px;
+  margin: 0 auto 15px;
+  padding: 0 10px;
+}
+
+img {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* 横並び画像のラッパー */
+.img-row {
+  display: flex;
+  justify-content: center;
+  gap: 8px; /* 画像間の隙間 */
+  flex-wrap: wrap;
+  margin: 20px auto;
+  padding: 0;
+}
+
+/* 横並び画像にだけ margin をリセット */
+.img-row img {
+  margin: 0; /* ← 重要！個別にmargin解除 */
+  width: 340px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* リンクスタイル */
+a {
+  color: #0077aa;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #005577;
+}
+
+footer {
+  text-align: center;
+  background-color: #eee;
+  color: #555;
+  padding: 15px 0;
+  font-size: 0.9em;
+  margin-top: 60px;
+}
+
+/* スクロール時フェードイン */
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-delay-1 { transition-delay: 0.2s; }
+.fade-delay-2 { transition-delay: 0.4s; }
+.fade-delay-3 { transition-delay: 0.6s; }
+.fade-delay-4 { transition-delay: 0.8s; }
+.fade-delay-5 { transition-delay: 1s; }
+
+/* article 全体を中央寄せ */
+article {
+  max-width: 720px;
+  margin: 0 auto 3em;
+  padding: 0 1em;
+}
+
+.header-image {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.header-image img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  opacity: 0.85;
+}
+
+.header-text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-header {
+  position: relative;
+  height: 450px;
+  background-image: url('img/header2.jpg');
+  background-size: cover;
+  background-position: center;
+  transition: background-image 1.5s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-text {
+  background-color: rgba(0, 0, 0, 0.65);
+  padding: 30px 50px;
+  border-radius: 12px;
+}
+
+.main-heading {
+  font-size: 2.8em;
+  margin-bottom: 0.4em;
+  font-weight: bold;
+  color: #ffffff; /* 白 */
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+.sub-heading {
+  color: #ff6f61; /* サーモンピンク */
+  font-size: 1.8em;
+  margin-bottom: 0.4em;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+.hero-header p {
+  font-size: 1.2em;
+  color: 	#a8d500; /* ラベンダー */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
