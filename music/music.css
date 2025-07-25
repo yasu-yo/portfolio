@@ -73,3 +73,22 @@ p {
 footer p {
   text-align: center;
 }
+
+.image-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.image-row img {
+  width: 48%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+.image-row img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
