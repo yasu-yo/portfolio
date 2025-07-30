@@ -9,13 +9,15 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   }, {
-    threshold: 0.2
+    threshold: 0.05 // 画面に少しでも入ったらすぐ表示
   });
 
   targets.forEach(target => observer.observe(target));
 });
 
-const images = ['img/header2.jpg', 'img/header3.jpg'];
+const images = [
+  'img/header2.jpg', 
+  'img/header3.jpg'];
 let index = 0;
 
 setInterval(() => {
