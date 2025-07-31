@@ -84,8 +84,8 @@ body {
   line-height: 1.8;
 }
 
+
 header {
-  background-color: pink;
   color: chocolate;
   padding: 40px 0;
   text-align: center;
@@ -286,9 +286,10 @@ article {
 .hero-header {
   position: relative;
   height: 450px;
-    background-image: url('img/header2.jpg'); /* 緑の道を初期画像に */
+  background-image: url('img/header2.jpg'); /* 緑の道を初期画像に */
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   transition: background-image 1.5s ease-in-out;
   display: flex;
   align-items: center;
