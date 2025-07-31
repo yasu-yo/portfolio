@@ -43,11 +43,8 @@ function changeHeaderImage() {
   heroHeader.style.backgroundImage = `url('${headerImages[currentHeader]}')`;
 }
 
-<<<<<<< HEAD
+
 setInterval(changeHeaderImage, 3500);
-=======
-setInterval(changeHeaderImage, 6000);
->>>>>>> cb81808cef2d0db6771620bf24dc96d04d957032
 
 document.addEventListener('DOMContentLoaded', () => {
   heroHeader.style.backgroundImage = `url('${headerImages[0]}')`;
